@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fafafa;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1565c0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.song-card {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.song-card:hover {
+    background: #f2f2f2;
+}
+
+.song-lyrics {
+    white-space: pre-wrap;
+    line-height: 2;
+    font-size: 18px;
+}
