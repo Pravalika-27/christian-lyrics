@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Christian Lyrics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🎵 Telugu Christian Lyrics</h1>
+    <p>Telugu Christian Songs Lyrics Collection</p>
+</header>
+
+<input
+    type="text"
+    id="search"
+    placeholder="Search song..."
+    onkeyup="searchSongs()"
+/>
+
+<div id="songList">
+
+    <a class="song-card" href="songs/neethi-sooryuda.html">
+        నా నీతి సూర్యుడా – భూవినేలే యెసయ్యా
+    </a>
+
+</div>
+
+<script>
+function searchSongs() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let songs = document.getElementsByClassName("song-card");
+
+    for (let i = 0; i < songs.length; i++) {
+        let txt = songs[i].innerText.toLowerCase();
+
+        if (txt.includes(input)) {
+            songs[i].style.display = "block";
+        } else {
+            songs[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
